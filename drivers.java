@@ -1,9 +1,10 @@
-import graphics.circle;
+package graphics;
+import graphics.circle; 
 import graphics.rectangle;
  import graphics.square;
  import graphics.triangle;
  import java.util.Scanner;
-class driver
+class drivers
 {
 public static void main(String[] args)
  { 
@@ -13,7 +14,7 @@ circle obj1 = new circle();
 rectangle obj2 = new rectangle(); 
 square obj3 = new square(); 
 triangle obj4 = new triangle();
-System.out.println("Choose any\n 1)Circle\n 2)Rectangle\n 3)Square\n 4)Triangle:\n 5)Exit ");
+System.out.println("Choose any	1)Circle 2)Rectangle 3)Square 4)Triangle: ");
 choice = sc.nextInt();
 switch (choice) 
 {
@@ -28,8 +29,6 @@ obj3.area();
 break;
 case 4:
 obj4.area(); 
-case 5:
-System.exit(0);
 default:
 break;
 }

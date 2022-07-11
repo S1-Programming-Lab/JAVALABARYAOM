@@ -11,7 +11,7 @@ class operations
     int[] a=new int[n];
     do
     {
-      System.out.println("\n---------------\nMENU :\n1.PUSH\n2.POP\n3.DISPLAY\n4.EXIT\n----------------");
+      System.out.println("MENU :\n1.PUSH\n2.POP\n3.DISPLAY\n4.EXIT");
       System.out.println("Enter your choice");
       ch=s.nextInt();
       switch(ch)
@@ -19,7 +19,7 @@ class operations
          case 1:
          if(top==size) 
          {
-           System.out.println("***Stack is full***");
+           System.out.println("Stack is full");
           }
          else
          {
@@ -32,26 +32,25 @@ class operations
          case 2:
          if(top==-1)
          {
-           System.out.println("***Stack is empty***");
+           System.out.println("Stack is empty");
           }
          else
          {
-           System.out.println("\n"+a[top]+"is removed");
+           System.out.println(+a[top] + "is removed");
            top--;
          }
           break;
          case 3:
          if(top==-1)
          {
-           System.out.println("***Stack is empty***");
+           System.out.println("Stack is empty");
           }
          else
          {
-           System.out.println("\n***Stack:***\n");
+           System.out.println("Stack:");
            for(int i=top;i>=0;i--)
            {
-             System.out.println(""+a[i]);
-             System.out.println("------");
+             System.out.println(+a[i]);
             }
           }
          break;
